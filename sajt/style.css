@@ -1,0 +1,422 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/****----Sirine----****/
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/****----Generalno----****/
+
+.centar{
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(bodoni-seventytwo-itc-bold.ttf);
+}
+
+div{
+    font-family: myFirstFont;
+}
+p{
+    font-family: myFirstFont;
+}
+
+/*-------Grid-------*/
+
+.grid {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*-------Pozadina-------*/
+
+body{
+    background-image: url(slike/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*-------Header-------*/
+
+.header{
+    
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgb(243, 214, 255);
+    padding: 10px;
+    border: 0px solid #6c20e7;
+    border-radius: 50px;
+}
+
+/*-----Linkovi------*/
+
+ul{
+    font-family: myFirstFont;
+    src: url(bodoni-seventytwo-itc-bold.ttf);
+}
+
+ul li{
+    display: inline-block;
+    padding: 20px;
+    border: 0px solid #6c20e7;
+    background-color: rgb(232, 193, 248);
+    border-radius: 15px;
+    width: 200px;
+    margin: 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #6c20e7;
+    font-size: 30px;
+}
+
+ul li:hover{
+    background-color: #6e0f7c;
+}
+
+/*-----Footer (copyright)-----*/
+
+footer {
+    background-color: rgb(243, 214, 255);
+    height: 25px;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+ }
+
+/*******----NASLOVNA------********/
+
+.oblak{
+    border-radius: 20px;
+    font-family: myFirstFont;
+    src: url(bodoni-seventytwo-itc-bold.ttf);
+    font-size: 1.2rem;
+    background-color: rgb(243, 214, 255);
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 0px solid #6c20e7;
+    padding: 50px;
+}
+
+.oblak img{
+    border: 0px solid black;
+    border-radius: 0px 50px 0px 50px;
+    margin-bottom: 10px;
+}
+
+.akcija{
+    margin-top: 5%;
+    margin-left: 5%;
+    
+}
+
+.radnovreme{
+    margin-right: 5%;
+    margin-left: 50%;
+    margin-bottom: 2%;
+}
+
+
+#plus{
+    font-size: 40px;
+}
+
+/*****-----MENI-----******/
+.telo{
+    background-color: rgb(243, 214, 255);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid #6c20e7;
+    border-radius: 15px;
+    font-family: myFirstFont;
+    src: url(bodoni-seventytwo-itc-bold.ttf);
+}
+
+.naslov{
+    font-size: 45px;
+    margin-left: 3%;
+    margin-top: 3%;
+    padding: 20px;
+    color:  #6c20e7;
+}
+
+/*------Tabele-----*/
+
+ table,th{
+     border: 2px solid rgb(43, 4, 71);
+     border-collapse: collapse;
+ }
+
+ table{
+     margin: 0 auto;
+ }
+
+ th{
+    font-weight: lighter;
+    height: 35px;
+ }
+
+ /*******----O NAMA-----*******/
+
+ .rectangle{
+    background-color: rgb(243, 214, 255);
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 0px solid #6c20e7;
+    border-radius: 50px;
+    padding: 50px;
+    font-size: 2rem;
+    font-family: myFirstFont;
+    src: url(bodoni-seventytwo-itc-bold.ttf);
+ }
+
+ .rectangle h1{
+    margin: 0 auto;
+    border-bottom: 3px ridge rgb(144, 70, 241);
+}
+
+.container {
+    position: relative;
+    margin: auto;
+    width: 50vw;
+    padding: 10px;
+  }
+
+.container1 {
+    position: relative;
+    margin: auto;
+    width: 30vw;
+    padding: 10px;
+  }
+
+.container1:hover .overlay {
+    opacity: 1;
+  }
+
+.container2 {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+  }
+.container2:hover .overlay {
+    opacity: 1;
+  }
+
+.container3 {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+.container3:hover .overlay {
+    opacity: 1;
+  }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(243, 214, 255);
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlayClick {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 5s ease; 
+    background-color: rgb(243, 214, 255);
+  }
+  
+  .container:active .overlayClick {
+    opacity: 1;
+    transition: .15s ease;
+  }
+  
+  .text {
+    color: rgb(102, 8, 121);
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .fontsize25 {
+    font-size: 25px;
+  }
+
+ .rectangle img{
+    border-radius: 20px;
+ }
+
+ .container {
+    margin-top: 2%;
+    text-align: center;
+  }
+
+.container p{
+    padding: 20px;
+    font-weight: 600;
+}
+
+.yt_vid{
+    margin-top: 2%;
+}
+
+ /*******---KONTAKT----******/
+
+ .kocka{
+    background-color: rgb(243, 214, 255);
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 0px solid #6c20e7;
+    border-radius: 10px;
+    padding: 50px;
+    word-wrap: break-word;
+}
+
+.kocka img{
+    margin-bottom: 6%;
+}
+
+.kocka p{
+    font-size: 2rem;
+    text-decoration: underline  1px;
+    font-family: myFirstFont;
+    src: url(bodoni-seventytwo-itc-bold.ttf);
+    font-weight: 700;
+}
+
+.kocka a{
+    color: black;
+    text-decoration: none;
+}
+
+/******-----RESPONSIVE----******/
+
+@media (max-width: 1000px){
+    /*---O NAMA---*/
+    iframe{
+        width: 250px;
+        height: 100px;
+    }
+}
+
+@media (max-width:600px){
+
+    .header{
+        width: 200px !important;
+    }
+    ul li{
+        width: 100px;
+    }
+    ul li a{
+        font-size: 12px !important;
+    }
+
+    /*---- NASLOVNA + O NAMA-----*/
+
+    h1{
+        font-size: 15px;
+    }
+
+    /*---O NAMA----*/
+
+    .container{
+        font-size: 12px !important;
+    }
+
+    p{
+        font-size: 12px !important;
+    }
+
+    iframe{
+            width: 112px  !important;
+            height: 36px  !important;
+    }
+
+    /*---MENI---*/
+
+    th{
+        font-size: 10px;
+    }
+    
+}
+
+@media (max-width: 250px){
+
+    /*---O NAMA----*/
+
+    iframe{
+        width: 66px  !important;
+        height: 18px  !important;
+    }
+
+    .rectangle p{
+        font-size: 6px !important;
+    }
+
+    /*---KONTAKT---*/
+    
+    .telo{
+        width: 150px;
+    }
+}
+
